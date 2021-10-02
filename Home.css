@@ -1,7 +1,7 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -11,12 +11,19 @@ body {
     background-color: black;
 }
 
+
 /* Images */
 
-.navbar img{
-  width: 10%;
-  justify-self: center;
+.navbar img {
+    width: 10%;
+    justify-self: center;
 }
+
+.Aboutusimg {
+    width: 35rem;
+    justify-self: center;
+}
+
 
 /* Images End */
 
@@ -24,26 +31,36 @@ body {
 /* Classes */
 
 .navbar ul {
-  list-style: none;
-  display: flex;
-
+    list-style: none;
+    display: flex;
 }
 
 .navbar a {
-  color: white;
-  margin: 0.5rem;
-  padding: 1rem;
-  text-decoration: none;
+    color: white;
+    margin: 0.5rem;
+    padding: 1rem;
+    text-decoration: none;
 }
 
 .navbar a:hover {
-  border-bottom: 1px white solid;
+    border-bottom: 1px white solid;
 }
 
 .navbar .c_flex {
-  flex-direction: column;
+    flex-direction: column;
 }
 
+
+/* About Us */
+
+.aboutus .grid {
+    gap: 3rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+/* About Us Ends*/
 
 
 /* Classes End */
