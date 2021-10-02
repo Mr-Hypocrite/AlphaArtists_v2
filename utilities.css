@@ -29,14 +29,14 @@
   margin: 10px;
 }
 
-.container {
-    max-width: 1100px;
+.c_container {
+    max-width: 80%;
     margin: 0 auto;
     overflow: auto;
-    padding: 0 40px;
+    padding: 0 5%;
 }
 
-.flex {
+.c_flex {
     display: flex;
     justify-content: center;
     align-items: center;

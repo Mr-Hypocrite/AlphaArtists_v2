@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    line-height: 1.6;
+    background-color: black;
+}
+
+/* Images */
+
+.navbar img{
+  width: 10%;
+  justify-self: center;
+}
+
+/* Images End */
+
+
+/* Classes */
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+
+}
+
+.navbar a {
+  color: white;
+  margin: 0.5rem;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  border-bottom: 1px white solid;
+}
+
+.navbar .c_flex {
+  flex-direction: column;
+}
+
+
+
+/* Classes End */
