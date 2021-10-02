@@ -44,6 +44,20 @@ body {
   flex-direction: column;
 }
 
+/* cards */
+
+.cards .grid{
+  grid-template-columns: repeat(3, 1fr);
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.card{
+  text-align: center;
+    height: 95%;
+}
+
 
 
 /* Classes End */
