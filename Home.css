@@ -1,109 +1,349 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    line-height: 1.6;
-    background-color: black;
+  background-color: black;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  padding-top: 3rem;
 }
 
+section {
+  padding-bottom: 8rem;
+}
 
 /* Images */
-
-.navbar img {
-    width: 10%;
-    justify-self: center;
+.c_navbar img {
+  width: 60px;
+  justify-self: center;
 }
 
 .Aboutusimg {
-    width: 35rem;
-    justify-self: center;
-    width: 5rem;
+  width: 35rem;
+  justify-self: center;
 }
 
 .AlphaIcon {
-    text-align: center;
+  text-align: center;
 }
 
 .Alpha_Artist {
-    width: 50rem;
-    justify-self: center;
+  width: 50rem;
+  justify-self: center;
 }
 
+.card-img {
+  width: 5vw;
+  height: auto;
+}
+
+.Portfolio-img {
+  width: 70rem;
+}
 
 /* Images End */
 
 
 /* Classes */
 
-.navbar ul {
-    list-style: none;
-    display: flex;
+/* Navbar */
+.c_navbar ul {
+  list-style: none;
+  display: flex;
 }
 
-.navbar a {
-    color: white;
-    margin: 0.5rem;
-    padding: 1rem;
-    text-decoration: none;
+.c_nav-elements a {
+  color: white;
+  margin: 0 1rem;
+  padding: 1rem;
+  text-decoration: none;
 }
 
-.navbar a:hover {
-    border-bottom: 1px white solid;
-    list-style: none;
-    display: flex;
+.c_nav-elements a:hover {
+  border-bottom: 1px white solid;
+  margin-bottom: -1px;
 }
 
-.nav-elements a {
-    color: white;
-    margin: 0.5rem;
-    padding: 1rem;
-    text-decoration: none;
+.c_navbar .c_flex {
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.nav-elements a:hover {
-    border-bottom: 2px white solid;
+.c_navbar .c_container {
+  margin: 0 auto 4%;
 }
 
-.navbar .c_flex {
-    flex-direction: column;
-}
+/* Navbar Ends */
 
-/* cards */
-
-.cards .grid{
-  grid-template-columns: repeat(3, 1fr);
-  align-items: flex-start;
-  width: 100%;
-  height: 100%;
-}
-
-.card{
+/* Home */
+.Home .c_grid {
+  gap: 3rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: fit-content(100%) 1fr;
   text-align: center;
-    height: 95%;
 }
 
+/* Home Ends */
 
 /* About Us */
-
-.aboutus .grid {
-    gap: 3rem;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+.aboutus .c_grid {
+  gap: 3rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: fit-content(100%) 1fr;
+  text-align: center;
 }
-
 
 /* About Us Ends*/
 
-.Home .grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    text-align: center;
+/* Cards */
+.c_body {
+  margin-top: 1rem;
 }
+
+.cards .c_card {
+  height: 85vh;
+  width: 25vw;
+}
+
+.cards .c_container {
+  position: relative;
+  top: -80px;
+  z-index: 1;
+}
+
+.c_card ul {
+  list-style: none;
+}
+
+/* Cards End */
+
+/* Portfolio */
+
+.port-btn {
+  margin: 4% 0;
+}
+
+.portfolio .c_container {
+  max-width: 100%;
+  margin: 6% 8%;
+  padding: 0;
+}
+
+.portfolio .c_grid {
+  gap: 0;
+  grid-template-columns: 35% 65%;
+}
+
+.portfolio .gtext {
+  background-color: black;
+  color: white;
+  text-align: left;
+}
+
+.g_img .c_grid {
+  gap: 0px;
+  grid-template-columns: 1fr 2fr;
+  margin-top: 0;
+}
+
+.g_img .grid_bot {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.UdprIll {
+  grid-row: 1 / span 2;
+}
+
+.gtext {
+  padding: 8%;
+  height: 100%;
+}
+
+.port-img {
+  background-color: black;
+  color: black;
+  text-align: center;
+  padding: 5rem 6rem;
+}
+
+/* Porfolio Ends */
+
+
+/* Films */
+
+.films .c_container {
+  max-width: 100%;
+  padding: 0;
+}
+
+/* Films End */
+
+
+/* Testimonials */
+
+.testimonials .c_container {
+  padding: 4% 0;
+}
+
+.testimonials .carousel-inner {
+  padding: 4% 15%;
+}
+
+.testimonials .carousel-item p {
+  margin-bottom: 2rem;
+}
+
+/* Testimonials End */
+
+/* Footer */
+
+.footer .c_grid {
+  grid-template-columns: 85% 15%;
+  gap: 0;
+}
+
+.footer .c_container {
+  margin: 5% 0;
+  padding: 0 0 0 16%;
+  max-width: 100%;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer a:hover {
+  color: #082032;
+}
+
+.footer .up:hover {
+  color: black;
+}
+
+.footer ul a {
+  margin: 0 0.6rem;
+}
+
+.up {
+  align-items: center;
+  background-color: gray;
+  display: flex;
+  flex-basis: 0;
+  font-size: 1rem;
+  height: 100%;
+  justify-content: center;
+  padding: 5%;
+}
+
+/* Footer Ends */
 
 
 /* Classes End */
+
+
+/* IDs */
+#cards, #portfolio, #films {
+  background-color: white;
+  color: black;
+}
+
+#testimonials {
+  background-color: #082032;
+  color: white;
+}
+
+#films, #testimonials {
+  text-align: center;
+}
+
+#footer, #testimonials, #c_navbar {
+  padding-bottom: 0;
+}
+
+/* IDs End */
+/* Media */
+@media only screen and (max-width: 1200px) {
+
+  /* Cards */
+
+  .card-img {
+    width: 8vw;
+    height: auto;
+  }
+
+  .cards .c_flex {
+    flex-wrap: wrap;
+  }
+
+  .cards .c_card {
+    height: 65vh;
+    width: 70vw;
+  }
+
+  /* Cards End */
+
+  /* Portfolio */
+
+  .portfolio .c_grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: fit-content(100%) fit-content(100%);
+    overflow: visible;
+  }
+
+  .g_img .c_grid {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+  }
+
+  .g_img .grid_bot {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .UdprIll {
+    grid-row: 1 / span 2;
+  }
+  /* Portfolio Ends */
+
+}
+
+@media only screen and (max-width:576px) {
+  .c_navbar ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+  }
+
+  .footer .c_grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 80% 20%;
+  }
+
+  .footer .c_container {
+    padding: 0;
+  }
+
+  .footer .up {
+    font-size: 0.5rem;
+    align-items: center;
+    padding: 2%;
+  }
+}
+
+/* Media Ends */

@@ -1,6 +1,6 @@
 /* Utilities */
 
-.btn{
+.c_btn{
   display: inline-block;
   padding: 10px 30px;
   cursor: pointer;
@@ -10,23 +10,24 @@
   border-radius: 5px;
 }
 
-.btn:hover{
+.c_btn:hover{
   transform: scale(0.98);
 }
 
-.btn-outline{
+.c_btn-outline{
   background-color: transparent;
   border: 1px white solid;
   color: white;
 }
 
-.card{
+.c_card{
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.2);
   color: #333;
-  padding: 20px;
-  margin: 10px;
+  padding: 1.5rem;
+  margin: 1rem;
+  text-align: center;
 }
 
 .c_container {
@@ -43,7 +44,7 @@
     height: 100%;
 }
 
-.grid {
+.c_grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
@@ -67,7 +68,7 @@
   }
 
   .md {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .lg {
