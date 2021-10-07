@@ -30,7 +30,7 @@ body {
 }
 
 section {
-  padding-bottom: 8rem;
+  padding-bottom: 9%;
 }
 
 /* Images */
@@ -60,6 +60,11 @@ section {
 
 .Portfolio-img {
   width: 70rem;
+}
+
+.thumnail-img {
+  width: 100%;
+  height: auto;
 }
 
 /* Images End */
@@ -198,6 +203,51 @@ section {
   padding: 0;
 }
 
+.films .c_grid {
+  gap: 0;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.films p {
+  padding: 2% 8%;
+}
+.car-btn {
+  font-size: 2rem;
+}
+
+.car-plcmt {
+  width: 3.5%;
+  color: black;
+}
+
+.car-plcmt:hover {
+  color: black;
+  opacity: 40%;
+}
+
+.close_btn {
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 30px;
+}
+
+.video-player {
+  width: 80%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 10%);
+  display: none;
+  padding-bottom: 8%;
+}
+
+video:focus {
+  outline: none;
+}
+
 /* Films End */
 
 
@@ -220,13 +270,13 @@ section {
 /* Footer */
 
 .footer .c_grid {
-  grid-template-columns: 85% 15%;
+  grid-template-columns: 90% 10%;
   gap: 0;
 }
 
 .footer .c_container {
   margin: 5% 0;
-  padding: 0 0 0 16%;
+  padding: 0 0 0 12%;
   max-width: 100%;
 }
 
@@ -262,7 +312,7 @@ section {
   background-color: gray;
   display: flex;
   flex-basis: 0;
-  font-size: 1rem;
+  font-size: 0.8rem;
   height: 100%;
   justify-content: center;
   padding: 5%;
@@ -298,6 +348,9 @@ section {
 @media only screen and (max-width: 1200px) {
 
   /* Cards */
+  .cards .c_container {
+    top: -60px;
+  }
 
   .card-img {
     width: 8vw;
@@ -338,11 +391,51 @@ section {
   }
   /* Portfolio Ends */
 
+  /* Films */
+
+  .car-btn {
+    font-size: 1.5rem;
+  }
+
+  /* Films End*/
+
 }
 
 @media only screen and (max-width:576px) {
+  h1 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.7rem;
+  }
+
+  .c_btn {
+    padding: 2% 3%;
+  }
+
+  .testimonials ol {
+    margin-bottom: 0;
+  }
+  /* NavBar */
+  .c_nav-elements a {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .c_navbar ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+  }
+
+  /* NavBar Ends */
 
   /* Cards */
+
+  .cards .c_container {
+    top: -40px;
+  }
 
   .c_body {
     max-height: 0;
@@ -366,10 +459,45 @@ section {
 
   /* Cards End */
 
-  .c_navbar ul {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5%;
+  /* Porfolio */
+
+  .port-btn {
+    font-size: 0.7rem;
+    margin: 2% 0;
+  }
+
+  .port-img {
+    padding: 10% 15%;
+  }
+
+  /* Porfolio Ends */
+
+
+  /* Films */
+
+  .car-btn {
+    font-size: 0.8rem;
+  }
+
+  /* Films End*/
+
+  /* Testimonials */
+
+  .testimonials .carousel-item p {
+    margin-bottom: 1rem;
+  }
+
+  .testimonials ol {
+    margin-bottom: 0;
+  }
+
+  /* Testimonials End */
+
+
+  /* Footer */
+
+  .footer ul a {
+    font-size: 0.8rem;
   }
 
   .footer .c_grid {
@@ -386,6 +514,8 @@ section {
     align-items: center;
     padding: 2%;
   }
+
+  /* Footer Ends */
 
 }
 
