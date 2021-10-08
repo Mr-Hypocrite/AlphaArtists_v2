@@ -141,6 +141,10 @@ section {
   list-style: none;
 }
 
+.c_card li>p {
+  margin-bottom: 1%;
+}
+
 /* Cards End */
 
 /* Portfolio */
@@ -362,7 +366,7 @@ video:focus {
   }
 
   .cards .c_card {
-    height: 65vh;
+    height: 70vh;
     width: 70vw;
   }
 
@@ -401,7 +405,37 @@ video:focus {
 
 }
 
-@media only screen and (max-width: 1200px) and (max-width: 768px) and (orientation: landscape) {
+@media only screen and (max-width: 768px) {
+  /* Cards */
+
+  .cards .c_container {
+    top: -40px;
+  }
+
+  .c_body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .cards .c_container {
+    padding: 0;
+  }
+
+  .card-img {
+    width: 15vw;
+    height: auto;
+  }
+
+  .cards .c_card {
+    height: 60%;
+    width: 70%;
+  }
+
+  /* Cards End */
+}
+
+@media only screen and (max-height: 768px) {
   /* Cards */
 
   .cards .c_container {
@@ -462,34 +496,17 @@ video:focus {
   /* NavBar Ends */
 
   /* Cards */
+
   .c_card h1 {
+    font-size: 1.2rem;
+  }
+
+  .c_card h5 {
     font-size: 1rem;
-  }
-  .cards .c_container {
-    top: -40px;
-  }
-
-  .c_body {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-  }
-
-  .cards .c_container {
-    padding: 0;
-  }
-
-  .card-img {
-    width: 15vw;
-    height: auto;
-  }
-
-  .cards .c_card {
-    height: 60%;
-    width: 70%;
   }
 
   /* Cards End */
+
 
   /* Porfolio */
 
