@@ -401,7 +401,7 @@ video:focus {
 
 }
 
-@media only screen and (max-height: 768px) {
+@media only screen and (max-width: 768px) and (orientation: landscape) {
   /* Cards */
 
   .cards .c_container {
@@ -462,7 +462,9 @@ video:focus {
   /* NavBar Ends */
 
   /* Cards */
-
+  .c_card h1 {
+    font-size: 1rem;
+  }
   .cards .c_container {
     top: -40px;
   }
