@@ -321,7 +321,7 @@ video:focus {
   display: grid;
   /* grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); */
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 1%;
   margin: 0 10%;
 }
 
@@ -343,6 +343,8 @@ video:focus {
 
 .c_modal {
   background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
   top: 0;
   left: 0;
   position: fixed;
@@ -363,8 +365,6 @@ video:focus {
   align-self: center;
   display: grid;
   grid-template-columns: 1fr;
-  margin: 0 auto;
-  text-align: center;
   transform: scale(0.5);
   transition: all 0.2s ease-in;
   width: 50%;
@@ -477,6 +477,14 @@ video:focus {
   }
 
   /* Films End*/
+
+  /* Porfolio Page */
+
+  .gallery-full {
+    width: 70%;
+  }
+
+  /* Porfolio Page Ends */
 }
 
 @media only screen and (max-width: 768px) {
@@ -634,6 +642,14 @@ video:focus {
   }
 
   /* Footer Ends */
+
+  /* Porfolio Page */
+
+  .gallery-full {
+    width: 80%;
+  }
+
+  /* Porfolio Page Ends */
 }
 
 /* Media Ends */
