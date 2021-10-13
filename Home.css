@@ -360,12 +360,14 @@ video:focus {
 }
 
 .gallery-full {
-  display: grid;
-  grid-template-columns: 70% 30%;
   align-self: center;
-  padding: 5% 15%;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  text-align: center;
   transform: scale(0.5);
   transition: all 0.2s ease-in;
+  width: 50%;
 }
 
 .pop {
