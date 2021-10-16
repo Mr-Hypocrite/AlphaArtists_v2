@@ -316,6 +316,7 @@ video:focus {
 }
 
 /* Footer Ends */
+
 /* Portfolio Page */
 .gallery {
   display: grid;
@@ -391,6 +392,22 @@ video:focus {
 
 
 /* Portfolio Page Ends */
+
+/* About Us */
+
+.AboutUs .c_grid {
+  gap: 3rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: fit-content(100%) 1fr;
+  text-align: center;
+}
+
+.AboutUs .Aboutusimg{
+  width: 90%;
+}
+
+/* About Us Ends */
+
 /* Classes End */
 /* IDs */
 #cards, #portfolio, #films, #Design, #Animation {

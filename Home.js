@@ -31,29 +31,26 @@ function playVideo(file) {
 
 // Portfolio
 
-const c_modal= document.querySelector(".c_modal");
-const preview= document.querySelectorAll(".gallery img");
-const full= document.querySelector(".gallery-full");
-const original= document.querySelector(".full-image");
-const caption= document.querySelector(".caption");
+const c_modal = document.querySelector('.c_modal');
+const preview = document.querySelectorAll('.gallery img');
+const full = document.querySelector('.gallery-full');
+const original = document.querySelector('.full-image');
 
-preview.forEach( preview => {
-  preview.addEventListener("click", () => {
-    c_modal.classList.add("open");
-    full.classList.add("pop");
+preview.forEach(preview => {
+  preview.addEventListener('click', () => {
+    c_modal.classList.add('open');
+    full.classList.add('pop');
+
     // change text and img
     const originalSrc = preview.getAttribute('src');
-    original.src= `${originalSrc}`;
-    console.log(originalSrc);
-    const altText= preview.alt;
-    caption.textContent=altText;
+    original.src = `${originalSrc}`;
   })
 });
 
-c_modal.addEventListener("click", (e) => {
-  if(e.target.classList.contains("c_modal")){
-    c_modal.classList.remove("open");
-    full.classList.remove("pop");
+c_modal.addEventListener('click', (e) => {
+  if (e.target.classList.contains('c_modal')) {
+    c_modal.classList.remove('open');
+    full.classList.remove('pop');
   }
 });
 
