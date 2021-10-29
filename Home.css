@@ -127,7 +127,7 @@ section {
 }
 
 .cards .c_card {
-  height: 90vh;
+  height: 650px;
   width: 25vw;
 }
 
@@ -390,6 +390,36 @@ video:focus {
   width: 100%;
 }
 
+.Websites .c_container {
+  padding: 5% 0;
+  text-align: center;
+}
+
+.Websites .c_grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.Websites .c_card img {
+  cursor: pointer;
+  object-fit: cover;
+  padding: 4% 0;
+  transition: all 0.3s ease-out;
+}
+
+.Websites .c_card img:hover {
+  transform: scale(1.05);
+  overflow: hidden;
+}
+
+.Websites a {
+  color: black;
+  text-decoration: none;
+}
+
+.Websites a:hover {
+  border-bottom: 1px solid black;
+}
+
 
 /* Portfolio Page Ends */
 
@@ -410,7 +440,7 @@ video:focus {
 
 /* Classes End */
 /* IDs */
-#cards, #portfolio, #films, #Design, #Animation {
+#cards, #portfolio, #films, #Design, #Animation, #Websites {
   background-color: white;
   color: black;
 }
@@ -435,11 +465,6 @@ video:focus {
 
 /* IDs End */
 /* Media */
-@media only screen and (min-width: 1440px) {
-  .cards .c_card {
-    height: 80vh;
-  }
-}
 
 @media only screen and (max-width: 1200px) {
   .Header {
@@ -499,6 +524,13 @@ video:focus {
 
   .gallery-full {
     width: 70%;
+  }
+
+  .Websites .c_card {
+  }
+
+  .Websites .c_grid {
+    grid-template-columns: 1fr;
   }
 
   /* Porfolio Page Ends */
