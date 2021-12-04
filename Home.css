@@ -326,6 +326,14 @@ video:focus {
   margin: 0 20%;
 }
 
+.g_horizontal {
+  grid-column: 1 / span 2;
+}
+
+.g_vertical {
+  grid-row: 1 / span 2;
+}
+
 .img-container {
   overflow: hidden;
 }
